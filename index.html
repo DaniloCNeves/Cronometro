@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        @font-face {
+            font-family: 'Digital-7';
+            src: url('fonts/DS-DIGIT.TTF') format('truetype');
+        }
+        body{
+            font-family: 'Digital-7';
+            font-size: 48pt;
+            color: darkgoldenrod;
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            margin: 250px auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <audio autoplay loop>
+        <source src="24 - Clock Effect.mp3" type="audio/mp3">
+    </audio>
+
+    <h1>
+        <span id="hora">00</span>:<span id="min">00</span>:<span id="seg">00</span>
+    </h1>
+
+    <script src="./js/js.js"></script>
+</body>
+</html>
